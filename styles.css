@@ -1,0 +1,835 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* ensures full height behavior */
+  
+  scroll-behavior: smooth;
+  
+}
+
+h1{ 
+    color: white;
+    font-family: PramukhRounded-Extrabold;
+    font-size: 119.36px;
+    text-align: left;
+    padding: 0px;
+    margin:0px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-radius: 60px;
+    padding-right: 10px;
+    padding-left: 30px;
+
+    margin-bottom: 60px;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    margin-top: 2.5%;
+
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+}
+
+.nav-btn {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+  border-radius: 60px;
+  background-color: #00D973;
+  height: 60px;
+  width: 140px;
+
+  cursor: pointer;               /* 👈 changes mouse to hand icon */
+  transition: all 0.2s ease;     /* 👈 smooth animation for hover */
+  
+}
+.nav-btn:hover {
+  opacity: 0.85;                 /* 👈 slightly faded look */
+  transform: translateY(-2px);   /* 👈 “pop up” effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 👈 soft shadow underneath */
+}
+
+
+.title {
+  margin-left: 3.5%;
+  margin-top:  2.5%;
+  
+}
+.hero-btn {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  border-style: none;
+  border-color: none;
+  border-radius: 60px;
+  background-color: #00D973;
+  height: 80px;
+  width: 140px;
+  margin-left: 3%;
+
+  position: relative;
+  z-index: 10;
+
+  cursor: pointer;               /* 👈 changes mouse to hand icon */
+  transition: all 0.2s ease;     /* 👈 smooth animation for hover */
+  
+}
+.hero-btn:hover {
+  opacity: 0.85;                 /* 👈 slightly faded look */
+  transform: translateY(-2px);   /* 👈 “pop up” effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 👈 soft shadow underneath */
+}
+
+.hero-call-btn {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 60px;
+  background-color: black;
+  height: 80px;
+  width: 340px;
+  margin-right: 3%;
+
+  cursor: pointer;               /* 👈 changes mouse to hand icon */
+  transition: all 0.2s ease; 
+}
+.hero-call-btn:hover {
+  font-size: 30px;
+  border-width: 20%;
+  opacity: 0.85;                 /* 👈 slightly faded look */
+  transform: translateY(-2px);   /* 👈 “pop up” effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 👈 soft shadow underneath */
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.hero-text{
+  font-family: PramukhRounded-Bold;
+  font-size: 39.06px;
+  text-align: left;
+  color: white;
+  margin-bottom: 200px;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+}
+
+
+.hero-buttons{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: end;
+
+
+
+}
+
+.hero-section{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px ;
+  margin-right: 3.5%;
+  
+}
+
+
+
+.hero-left{
+    flex: 0 1 60%;
+    border-radius: 55px;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 15px;
+    margin-left: 3.5%;
+    padding-bottom: 10px;
+    
+}
+.hero-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ✅ ensures image fills the div evenly */
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 60px;
+    
+}
+.menu-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+
+}
+
+.scrollable-options{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 10px;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    margin-bottom: 3.5%;
+    padding-bottom: 3.5%;
+    
+}
+
+
+.scrollable-options img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 🧱 Two columns */
+    gap: 20px; /* Space between columns */
+    margin-bottom: 0%;
+    max-width: flex; /* Keeps layout centered and neat */
+    margin: 0 auto; /* Center horizontally */
+    height: 60vh; /* Fixed section height (70% of viewport) */
+    overflow-y: scroll; /* Scroll vertically */
+    padding: 20px;
+    box-sizing: border-box;
+    background: #F97136;
+    border-radius: 10px;
+    border-style: solid;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+  }
+
+  @media (max-width: 768px) {
+    .menu-content {
+      grid-template-columns: 1fr; /* one column layout */
+      height: auto; /* optional: let height adjust naturally */
+    }
+  }
+
+.menu-current {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+.icon-header{
+    font-family: Helvetica, sans-serif;
+    font-size: 25;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    gap: 20%;
+    border-radius: 15px 15px 0 0;
+}
+
+.location {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  border-color: black;
+  border-style: solid;
+}
+
+.location-icon{
+  width: 5vw; /* 5% of viewport width */
+  height: auto;
+  color: #F97136;
+}
+.time-icon{
+  width: 5vw; /* 5% of viewport width */
+  height: auto;
+  color: #F97136;
+
+}
+
+.op{
+  display: flex;
+  gap: 10vw;
+  background-color: white;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 0 0 20px 20px ;
+  border-color: black;
+  border-style: solid;
+}
+.op-section{
+  background-color: white;
+}
+.location-info{
+  padding-left: 3.5%;
+  padding-bottom: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.op-section div {
+border-color: black;
+border-width: 1px;
+border-style: solid;
+}
+
+.rowz {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rowz div{
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+
+
+.info {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    margin-top: 8%;
+    margin-bottom: 5vh;
+}
+
+
+.op {
+    display: flex;
+    justify-content: space-between;
+}
+
+.google-map {
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    margin-bottom: 3.5%;
+    padding-bottom: 50%;
+    position: relative;
+    border-radius: 35px;
+    border-color: black;
+    border-style: solid;
+    background-color: black;
+
+
+    
+}
+
+.google-map iframe {
+    
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    object-fit: cover;    /* fills div without distortion */
+    display: block;
+    margin-bottom: 0px;
+    object-fit: cover; /* ✅ ensures image fills the div evenly */
+    border-radius: 35px;
+
+}
+.footer {
+  background-color: black;
+  color: white;
+  width: 100vw; /* ensure full viewport width */
+  margin-left: calc(50% - 50vw); /* 🧠 ensures it breaks out of any centered wrapper */
+  margin-right: calc(50% - 50vw);
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* ✅ responsive for smaller screens */
+  box-sizing: border-box;
+  align-items: center;
+
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: #F97136;
+}
+.logo{
+  display: flex;
+}
+.menu {
+
+  background-color: #FFF176;
+  border-radius: 60px;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+  border-width: 4px;
+  border-color: black;
+  border-style: solid;
+}
+h2 {
+  font-size: 61.03px;
+  color:black;
+}
+
+.options{
+  display:block;
+  flex: 0 0 calc((96.2% / 3) - 10px);
+  background-color: black;
+  border-radius: 30px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  margin-bottom: 0%;  
+}
+@media (max-width: 768px) {
+  .options {
+    flex: 0 0 calc((96.2% / 2) - 10px);
+    height: auto; /* optional: let height adjust naturally */
+  }
+}
+.img-holder{
+  display:flex;
+  flex: 0 1 50%;
+  border-radius: 30px;
+}
+.options img {
+  width: 100%;
+  height: 100%;
+  /* maintains aspect ratio */
+  object-fit: cover;    /* fills div without distortion */
+  display: block;
+  margin-bottom: 0px;
+  object-fit: cover; /* ✅ ensures image fills the div evenly */
+  border-radius: 25px;
+
+  /*border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 30px;*/
+
+}
+
+.options h4 { 
+  color: white;
+  font-size: 31.35px;
+  margin-top: 0%;
+  margin-bottom:0px;
+  
+}
+.options p { 
+  color: white;
+  margin-top: 2.5%;
+  margin-bottom: 10%;
+  font-size: 1rem;
+}
+.options button {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+  border-radius: 60px;
+  background-color: #00D973;
+  height: 60px;
+  width: 140px;
+}
+.options-info{
+  align-self: flex-start;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 2.5%;
+  padding-top: 2.5%;
+  padding-right: 2.5%;
+  padding-bottom: 2.5%;
+  
+
+}
+
+.menu-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  max-height: 115px;
+  
+
+  
+}
+.menu-item-info h3{
+  color: white;
+  margin-left: 20px;
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  
+}
+.menu-item-info p{
+  color: white;
+  margin-left: 20px;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  
+}
+.menu-item-price {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #FFF176;
+  color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;             /* vertically center text */
+  justify-content: center;
+  border-color: black;
+  margin-right: 5px;
+  margin-top:5px;
+  margin-left:5px;
+  margin-bottom: 5px;
+  height: 60px;
+  width: 60px;
+  
+}
+.hero-image-container{
+  flex: 0 1 35%;    /* base width ~55%, can shrink if needed */
+  display: flex;
+  border-radius: 60px;
+
+}
+
+.discover-button{
+  margin-top: auto;
+  margin-bottom: 0%;
+  cursor: pointer;               /* 👈 changes mouse to hand icon */
+  transition: all 0.2s ease; 
+}
+
+.discover-button:hover {
+  border-color: white;
+  border-style: bold;
+  opacity: 0.95;                 /* 👈 slightly faded look */
+  transform: translateY(-2px);   /* 👈 “pop up” effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 👈 soft shadow underneath */
+}
+
+
+.cat {
+  font-size: 61.03px;
+  color:black;
+}
+
+.cat-buttons-back {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+  border-radius: 60px;
+  background-color: black;
+  height: 60px;
+  width: 140px;
+  cursor: pointer;               /* 👈 changes mouse to hand icon */
+  transition: all 0.2s ease; 
+
+}
+
+.cat-buttons-back:hover {
+  border-color: white;
+  border-style: bold;
+  opacity: 0.95;                 /* 👈 slightly faded look */
+  transform: translateY(-2px);   /* 👈 “pop up” effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 👈 soft shadow underneath */
+}
+.cat-buttons-order {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+  border-radius: 60px;
+  background-color: #00D973;
+  height: 60px;
+  width: 140px;
+}
+.footer-right{
+  display: flex;
+  justify-content: space-between;
+  gap: 15%;
+}
+.footer-left a{
+  display: block;
+  color: white;
+  text-decoration: none; /* remove underline */
+  padding-left:0%;
+  padding-bottom:10%;
+  padding-top:10%;
+  
+}
+.footer-left a:hover {
+  display: block;
+  color: white;
+  text-decoration: underline; /* remove underline */
+  padding-left:0%;
+  padding-bottom:10%;
+  padding-top:10%;
+  
+}
+.footer-left h3{
+  margin-top: 0%;
+  
+}
+.assets {
+  margin-top: 0%;
+}
+
+
+
+
+/**
+* @license
+*
+* Font Family: Pramukh Rounded
+* Designed by: Aarya Purohit, Indian Type Foundry
+* URL: https://www.fontshare.com/fonts/pramukh-rounded
+* © 2025 Indian Type Foundry
+*
+* Pramukh Rounded Extralight 
+* Pramukh Rounded ExtralightItalic 
+* Pramukh Rounded Light 
+* Pramukh Rounded LightItalic 
+* Pramukh Rounded Semilight 
+* Pramukh Rounded SemilightItalic 
+* Pramukh Rounded Regular 
+* Pramukh Rounded Italic 
+* Pramukh Rounded Semibold 
+* Pramukh Rounded SemiboldItalic 
+* Pramukh Rounded Bold 
+* Pramukh Rounded BoldItalic 
+* Pramukh Rounded Extrabold 
+* Pramukh Rounded ExtraboldItalic 
+* Pramukh Rounded Black 
+* Pramukh Rounded BlackItalic 
+* Pramukh Rounded Variable (Variable font)
+* Pramukh Rounded VariableItalic (Variable font)
+
+*
+*/
+@font-face {
+    font-family: 'PramukhRounded-Extralight';
+    src: url('/fonts/PramukhRounded-Extralight.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-Extralight.woff') format('woff'),
+         url('/fonts/PramukhRounded-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-ExtralightItalic';
+    src: url('/fonts/PramukhRounded-ExtralightItalic.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-ExtralightItalic.woff') format('woff'),
+         url('/fonts/PramukhRounded-ExtralightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-Light';
+    src: url('/fonts/PramukhRounded-Light.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-Light.woff') format('woff'),
+         url('/fonts/PramukhRounded-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-LightItalic';
+    src: url('/fonts/PramukhRounded-LightItalic.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-LightItalic.woff') format('woff'),
+         url('/fonts/PramukhRounded-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-Semilight';
+    src: url('/fonts/PramukhRounded-Semilight.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-Semilight.woff') format('woff'),
+         url('/fonts/PramukhRounded-Semilight.ttf') format('truetype');
+    font-weight: 350;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-SemilightItalic';
+    src: url('/fonts/PramukhRounded-SemilightItalic.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-SemilightItalic.woff') format('woff'),
+         url('/fonts/PramukhRounded-SemilightItalic.ttf') format('truetype');
+    font-weight: 350;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-Regular';
+    src: url('/fonts/PramukhRounded-Regular.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-Regular.woff') format('woff'),
+         url('/fonts/PramukhRounded-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-Italic';
+    src: url('/fonts/PramukhRounded-Italic.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-Italic.woff') format('woff'),
+         url('/fonts/PramukhRounded-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-Semibold';
+    src: url('/fonts/PramukhRounded-Semibold.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-Semibold.woff') format('woff'),
+         url('/fonts/PramukhRounded-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-SemiboldItalic';
+    src: url('/fonts/PramukhRounded-SemiboldItalic.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-SemiboldItalic.woff') format('woff'),
+         url('/fonts/PramukhRounded-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-Bold';
+    src: url('/fonts/PramukhRounded-Bold.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-Bold.woff') format('woff'),
+         url('/fonts/PramukhRounded-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-BoldItalic';
+    src: url('/fonts/PramukhRounded-BoldItalic.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-BoldItalic.woff') format('woff'),
+         url('/fonts/PramukhRounded-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-Extrabold';
+    src: url('/fonts/PramukhRounded-Extrabold.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-Extrabold.woff') format('woff'),
+         url('/fonts/PramukhRounded-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-ExtraboldItalic';
+    src: url('/fonts/PramukhRounded-ExtraboldItalic.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-ExtraboldItalic.woff') format('woff'),
+         url('/fonts/PramukhRounded-ExtraboldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-display: swap;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-Black';
+    src: url('/fonts/PramukhRounded-Black.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-Black.woff') format('woff'),
+         url('/fonts/PramukhRounded-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'PramukhRounded-BlackItalic';
+    src: url('/fonts/PramukhRounded-BlackItalic.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-BlackItalic.woff') format('woff'),
+         url('/fonts/PramukhRounded-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+  }
+  /**
+  * This is a variable font
+  * You can control variable axes as shown below:
+  * font-variation-settings: wght 900.0;
+  *
+  * available axes:
+  'wght' (range from 200.0 to 900.0
+  */
+  @font-face {
+    font-family: 'PramukhRounded-Variable';
+    src: url('/fonts/PramukhRounded-Variable.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-Variable.woff') format('woff'),
+         url('/fonts/PramukhRounded-Variable.ttf') format('truetype');
+    font-weight: 200 900;
+    font-display: swap;
+    font-style: normal;
+  }
+  /**
+  * This is a variable font
+  * You can control variable axes as shown below:
+  * font-variation-settings: wght 900.0;
+  *
+  * available axes:
+  'wght' (range from 200.0 to 900.0
+  */
+  @font-face {
+    font-family: 'PramukhRounded-VariableItalic';
+    src: url('/fonts/PramukhRounded-VariableItalic.woff2') format('woff2'),
+         url('/fonts/PramukhRounded-VariableItalic.woff') format('woff'),
+         url('/fonts/PramukhRounded-VariableItalic.ttf') format('truetype');
+    font-weight: 200 900;
+    font-display: swap;
+    font-style: italic;
+  }

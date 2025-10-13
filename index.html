@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+        
+        <p style="font-size: 55px; color: white; font-family: PramukhRounded-Bold; margin-top: 0%; margin-bottom: 0%;">BFF</p>
+        
+        
+        <ul>
+            <li><a href="#home">HOME</a></li>  
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#info">INFO</a></li>
+        </ul>
+        <button class="nav-btn" onclick=" window.location.href='https://deliveroo.be/nl-be/menu/Brugge/centrum/brugge-fast-food?day=today&geohash=u14736hqv6gn&time=ASAP';" >ORDER</button>
+    </nav>
+    <section id="home" class="hero-section">
+        <div class="hero-left">
+            <div class="title">
+                <h1 style="padding: 0;">Food that hits the Spot.</h1>
+                <h1 style="padding: 0;">Every Time.</h1>
+            </div>
+            
+            <p class="hero-text">A quick bite, a family feast, or late-night fuel — we've got the pita, pizza, kebabs, and dumplings you're after.</p>
+            <div class="hero-buttons">
+                <button class="hero-btn" onclick=" window.location.href='https://deliveroo.be/nl-be/menu/Brugge/centrum/brugge-fast-food?day=today&geohash=u14736hqv6gn&time=ASAP';" >ORDER</button> 
+                <button class="hero-call-btn">+32 / 0468433996</button>
+            </div>
+        </div>
+
+        <div class="hero-image-container">
+            <img class="hero-image" src="images/hero_image.jpg" alt="HERO"/>
+        </div>
+        
+        
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="menu-head">
+            <h2> OUR MENU </h2>
+            <button class="nav-btn" onclick=" window.location.href='https://deliveroo.be/nl-be/menu/Brugge/centrum/brugge-fast-food?day=today&geohash=u14736hqv6gn&time=ASAP';">ORDER</button>
+        </div>
+        <div class="scrollable-options">
+            <div class="options">
+                <div class="img-holder">
+                    <img src="images/momo.jpg" alt="MOMO"/>
+                </div>
+                
+                
+                
+                <div class="options-info">
+                    <div class="options-info-text">
+                        <h4>Himalyan</h4>
+                        <p>discover taste of Nepalese cuisine: from dumplings to noodles</p>
+                    </div>
+
+                    <button onclick="location.href='#direct'" class="discover-button" data-category="Himalayan"> Discover </button>
+                </div>
+                
+                
+            </div>
+            <div class="options">
+                <div class="img-holder">
+                    <img src="images/pizza1.jpg" alt="PIZZA"/>
+                </div>
+                <div class="options-info">
+                    <div class="options-info-text">
+                        <h4>Pizzas</h4>
+                        <p>Check out our wide choice of heartwarming and filling pizzas.</p>
+                    </div>
+                    
+                    <button onclick="location.href='#direct'" class="discover-button" data-category="Pizza"> Discover </button>
+                </div>
+                
+            </div> 
+            <div class="options">
+                <div class="img-holder">
+                    <img src="images/snacks.jpg" alt="SNACKS"/>
+
+                </div>
+                <div class="options-info">
+                    <div class="options-info-text">
+                        <h4>Snacks</h4>
+                        <p>Fancy a kebab after a night out, we've got the best choices of hangover foods for you</p>
+                    </div>
+                    
+                    <button onclick="location.href='#direct'" class="discover-button" data-category="Snacks"> Discover </button>
+                </div>
+                
+                
+            </div> 
+            <div class="options">
+                <div class="img-holder">
+                    <img src="images/pesto-pasta.jpg" alt="PASTA"/>
+
+                </div>
+
+                <div class="options-info">
+                    <div class="options-info-text">
+                        <h4>Pastas</h4>
+                        <p>Fancy a kebab after a night out, we've got the best choices of hangover foods for you</p>
+                    </div>
+                    
+                    <button onclick="location.href='#direct'" class="discover-button" data-category="Pastas"> Discover </button>
+                </div>
+                
+            </div> 
+            <div class="options">
+                <div class="img-holder">
+                    <img src="images/drinks.jpg" alt="DRINKS"/>
+
+                </div>
+                <div class="options-info">
+                    <div class="options-info-text">
+                        <h4>Drinks</h4>
+                        <p>Fancy a kebab after a night out, we've got the best choices of hangover foods for you</p>
+                    </div>
+                    
+                    <button onclick="location.href='#direct'" class="discover-button" data-category="Drinks"> Discover </button>
+
+                </div>
+            </div>
+            <div class="options">
+                <div class="img-holder">
+                    <img src="images/better salad.jpg" alt="DRINKS"/>
+
+                </div>
+                <div class="options-info">
+                    <div class="options-info-text">
+                        <h4>Salads and Sauces</h4>
+                        <p>Fancy a kebab after a night out, we've got the best choices of hangover foods for you</p>
+                    </div>
+                    
+                    <button onclick="location.href='#direct'" class="discover-button" data-category="Salads"> Discover </button>
+    
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+    <section id="direct" >
+        <div id="menu-current" class="menu-current">
+        
+        </div>
+        <div id="menu-content" class="menu-content">
+            
+        </div>
+
+    </section>    
+    
+    <section id="info">
+        <div class="info">
+            <div class="location">
+                <div class="icon-header">
+                    <h3>LOCATION</h3>
+                    <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5.843 4.57c3.4-3.401 8.913-3.401 12.314 0s3.4 8.912 0 12.313l-1.187 1.173a657 657 0 0 1-3.406 3.313a2.25 2.25 0 0 1-3.128 0l-3.491-3.397q-.658-.646-1.102-1.09a8.707 8.707 0 0 1 0-12.313M12 8a3 3 0 1 0 0 6a3 3 0 0 0 0-6"/></svg>
+                </div>
+                <div class="location-info">
+                    <p>Ezelstraat 63</p>
+                    <p>Brugge 8000</p>
+                    
+                </div>
+            </div>
+            <div class="opening-hours">
+                <div class="icon-header">
+                    <h3>OPENING HOURS</h3>
+                    <svg class="time-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M17 3.34a10 10 0 1 1-14.995 8.984L2 12l.005-.324A10 10 0 0 1 17 3.34M12 6a1 1 0 0 0-.993.883L11 7v5l.009.131a1 1 0 0 0 .197.477l.087.1l3 3l.094.082a1 1 0 0 0 1.226 0l.094-.083l.083-.094a1 1 0 0 0 0-1.226l-.083-.094L13 11.585V7l-.007-.117A1 1 0 0 0 12 6"/></svg>
+                </div>
+                <div class="op">
+                    <div >
+                        <div>
+                            <p>12:00 - 22:00</p>
+                        </div>
+                        <div >
+                            <p>12:00 - 23:00</p>
+                        </div>
+                        <div >
+                            <p>closed</p>
+                        </div>
+                    </div>
+                    <div >
+                        
+                        <div>
+                            <p>Friday, Saturday</p>
+                        </div>
+                        <div >
+                            <p>Sunday, Monday, Tuesday, Thursday</p>
+                        </div>
+                        <div >
+                            <p>Wednesday</p>
+                        </div>
+
+                    </div>     
+    
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.3797359545515!2d3.2156727766583897!3d51.213133132157836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c350d6bcb6a771%3A0xe383f1409f6d781e!2sEzelstraat%2063%2C%208000%20Brugge!5e1!3m2!1snl!2sbe!4v1760010726700!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="feet">
+                <h3>Quick Links</h3>
+                <a href="#home">home</a>
+                <a href="#menu">menu</a>
+                <a href="#info">info</a>
+                
+            </div>
+            
+        </div>
+        <div class="footer-right">
+            <div class="feet">
+                <h3>Opening hours</h3>
+                <p>12am - 11pm : Friday, Saturday</p>
+                <p>12am - 10pm : Sunday, Monday, Tuesday</p>
+                <p>closed : Wednesday</p>
+            </div>
+            <div class="feet">
+                <h3>Contact us</h3>
+                <p>+32 / 0468433996</p>
+                <p>something@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="menu.js"></script>
+</body>
+</html>
