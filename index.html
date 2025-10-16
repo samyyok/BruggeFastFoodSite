@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BruggeFastFood</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <nav class="navbar">
+    <div class="nav-div">
+        <nav class="navbar">
+            <p class="logo" >BFF</p>
         
-        <p style="font-size: 55px; color: white; font-family: PramukhRounded-Bold; margin-top: 0%; margin-bottom: 0%;">BFF</p>
+            <div class="options-top">
+                <ul >
+                    <li><a href="#home">HOME</a></li>  
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#info">INFO</a></li>
+                </ul>
+            </div>
+            
+            <button class="nav-btn" onclick=" window.location.href='https://deliveroo.be/nl-be/menu/Brugge/centrum/brugge-fast-food?day=today&geohash=u14736hqv6gn&time=ASAP';" >ORDER</button>
+        </nav>
         
-        
-        <ul>
-            <li><a href="#home">HOME</a></li>  
-            <li><a href="#menu">MENU</a></li>
-            <li><a href="#info">INFO</a></li>
-        </ul>
-        <button class="nav-btn" onclick=" window.location.href='https://deliveroo.be/nl-be/menu/Brugge/centrum/brugge-fast-food?day=today&geohash=u14736hqv6gn&time=ASAP';" >ORDER</button>
-    </nav>
+    </div>
+    
     <section id="home" class="hero-section">
         <div class="hero-left">
             <div class="title">
@@ -29,7 +34,7 @@
             <p class="hero-text">A quick bite, a family feast, or late-night fuel — we've got the pita, pizza, kebabs, and dumplings you're after.</p>
             <div class="hero-buttons">
                 <button class="hero-btn" onclick=" window.location.href='https://deliveroo.be/nl-be/menu/Brugge/centrum/brugge-fast-food?day=today&geohash=u14736hqv6gn&time=ASAP';" >ORDER</button> 
-                <button class="hero-call-btn">+32 / 0468433996</button>
+                <a class="hero-call-btn" href="tel:+32 0470187645">Call us</a>
             </div>
         </div>
 
@@ -156,17 +161,25 @@
     
     <section id="info">
         <div class="info">
-            <div class="location">
-                <div class="icon-header">
-                    <h3>LOCATION</h3>
-                    <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5.843 4.57c3.4-3.401 8.913-3.401 12.314 0s3.4 8.912 0 12.313l-1.187 1.173a657 657 0 0 1-3.406 3.313a2.25 2.25 0 0 1-3.128 0l-3.491-3.397q-.658-.646-1.102-1.09a8.707 8.707 0 0 1 0-12.313M12 8a3 3 0 1 0 0 6a3 3 0 0 0 0-6"/></svg>
+            <a  
+            href="https://maps.app.goo.gl/EeizPDjSspJo5MsH6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="location" >
+                <div>
+                    <div class="icon-header">
+                        <h3>LOCATION</h3>
+                        <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5.843 4.57c3.4-3.401 8.913-3.401 12.314 0s3.4 8.912 0 12.313l-1.187 1.173a657 657 0 0 1-3.406 3.313a2.25 2.25 0 0 1-3.128 0l-3.491-3.397q-.658-.646-1.102-1.09a8.707 8.707 0 0 1 0-12.313M12 8a3 3 0 1 0 0 6a3 3 0 0 0 0-6"/></svg>
+                    </div>
+                    <div class="location-info">
+                        <p>Find us at</p>
+                        <p>Ezelstraat 63, Brugge 8000</p>
+                        
+                    </div>
                 </div>
-                <div class="location-info">
-                    <p>Ezelstraat 63</p>
-                    <p>Brugge 8000</p>
-                    
-                </div>
-            </div>
+
+            </a>
+            
             <div class="opening-hours">
                 <div class="icon-header">
                     <h3>OPENING HOURS</h3>
@@ -206,32 +219,80 @@
         <div class="google-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.3797359545515!2d3.2156727766583897!3d51.213133132157836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c350d6bcb6a771%3A0xe383f1409f6d781e!2sEzelstraat%2063%2C%208000%20Brugge!5e1!3m2!1snl!2sbe!4v1760010726700!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
+        <div class="opening-hours-mobile">
+            <div class="icon-header">
+                <h3>OPENING HOURS</h3>
+                <svg class="time-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M17 3.34a10 10 0 1 1-14.995 8.984L2 12l.005-.324A10 10 0 0 1 17 3.34M12 6a1 1 0 0 0-.993.883L11 7v5l.009.131a1 1 0 0 0 .197.477l.087.1l3 3l.094.082a1 1 0 0 0 1.226 0l.094-.083l.083-.094a1 1 0 0 0 0-1.226l-.083-.094L13 11.585V7l-.007-.117A1 1 0 0 0 12 6"/></svg>
+            </div>
+            <div class="op">
+                <div >
+                    <div>
+                        <p>12:00 - 22:00</p>
+                    </div>
+                    <div >
+                        <p>12:00 - 23:00</p>
+                    </div>
+                    <div >
+                        <p>closed</p>
+                    </div>
+                </div>
+                <div >
+                    
+                    <div>
+                        <p>Friday, Saturday</p>
+                    </div>
+                    <div >
+                        <p>Sunday, Monday, Tuesday, Thursday</p>
+                    </div>
+                    <div >
+                        <p>Wednesday</p>
+                    </div>
+
+                </div>     
+
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
         <div class="footer-left">
-            <div class="feet">
+            <div>
                 <h3>Quick Links</h3>
-                <a href="#home">home</a>
-                <a href="#menu">menu</a>
-                <a href="#info">info</a>
-                
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#info">Info</a>
             </div>
+        </div>
+        
+        <div class="footer-right">
+            <div class="feet-hours">
+                <h3>Opening hours</h3>
+                <p >12am - 11pm : Friday, Saturday</a>
+                <p >12am - 10pm : Sunday, Monday, Tuesday</a>
+                <p >closed : Wednesday</p>
+            </div>
+            <div class="feet-contact">
+                <h3>Contact us</h3>
+                <a style="color:white;"href="tel:+32 0470187645"> +32 0470187645 </a>
+                <a style="display: block;">something@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-mobile">
+        <div class="feet-left">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#info">Info</a>
             
         </div>
-        <div class="footer-right">
-            <div class="feet">
-                <h3>Opening hours</h3>
-                <p>12am - 11pm : Friday, Saturday</p>
-                <p>12am - 10pm : Sunday, Monday, Tuesday</p>
-                <p>closed : Wednesday</p>
-            </div>
-            <div class="feet">
-                <h3>Contact us</h3>
-                <p>+32 / 0468433996</p>
-                <p>something@gmail.com</p>
-            </div>
+        <div class="feet-contact">
+            <h3>Contact us</h3>
+            <a style="color:white;"href="tel:+32 0470187645"> +32 0470187645 </a>
+            <a style="display: block;">something@gmail.com</a>
         </div>
+       
     </footer>
     <script src="menu.js"></script>
 </body>

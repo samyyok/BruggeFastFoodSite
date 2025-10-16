@@ -177,11 +177,12 @@ document.querySelectorAll(".options button").forEach((btn) => {
 function updateCurrent(category){
     const container = document.getElementById("menu-current");
     container.innerHTML = `
-      
-        <h3 class="cat"> ${category} </h3>
+          
+          <h3 class="cat"> ${category} </h3>
+          
           <div class="cat-buttons">
             <button class="cat-buttons-back" onclick="location.href='#menu'"> BACK </button>
-            <button class="nav-btn" onclick=" window.location.href='https://deliveroo.be/nl-be/menu/Brugge/centrum/brugge-fast-food?day=today&geohash=u14736hqv6gn&time=ASAP'; "> ORDER </button>
+            <button class="nav-btn-menu" onclick=" window.location.href='https://deliveroo.be/nl-be/menu/Brugge/centrum/brugge-fast-food?day=today&geohash=u14736hqv6gn&time=ASAP'; "> ORDER </button>
           </div>
       
         
