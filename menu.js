@@ -1,109 +1,109 @@
 console.log("I am working rn")
 const menuData = {
     Himalayan: [
-        { name: "Momo (steam / fried) (Chicken / veg)", desc: "Minced Chicken, Onion, Garlic, Ginger en Momo Kruiden.", price: 10 },
-        { name: "Chowmein (Chicken / veg)", desc: "Noodle, Chicken, Ui, Mix veggies, kruiden.", price: 10 },
-        { name: "Samosa", desc: "Potato, Onion, Ginger, Garlic en kruiden.", price: 2.50},
-        { name: "Pizza Himalayan", desc: "Tomato saus , Cheese, Paprika, Onion, Garlic,Chicken, Spices en Origano", price: 13 },
+        { name: "Momo (steam / fried) (Chicken / veg)", desc: "Minced Chicken, Onion, Garlic, Ginger and Nepalese Spices.", price: 10 },
+        { name: "Chowmein (Chicken / veg)", desc: "Noodles, Chicken, Onion, Mix veggies, Spices.", price: 12 },
+        { name: "Samosa", desc: "Potato, Onion, Ginger, Garlic and Spices.", price: 2.50},
+        { name: "Pizza Himalayan", desc: "Tomato sauce, Cheese, Paprika, Onion, Garlic, Chicken, Spices en Oregano", price: 13 },
     ],
     
     Pizza: [
       { 
         name: "Pizza Margarita", 
-        desc: "Tomaat saus , Kaas, Origano", 
-        price: 10 
+        desc: "Tomato sauce, Cheese, Oregano", 
+        price: 12
       },
       { 
         name: "Pizza porsciutto", 
-        desc: "Tomaat saus , Kaas, Ham, Origano", 
-        price: 12
+        desc: "Tomato sauce , Cheese, Ham, Oregano", 
+        price: 14
       },
     
       { 
         name: "Pizza Romana", 
-        desc: "Tomaat saus , Kaas, Ham, Champignon, Origano", 
-        price: 12
+        desc: "Tomato sauce , Cheese, Ham, Mushroom, Oregano", 
+        price: 14
       },
       
       { 
         name: "Pizza Hawaii", 
-        desc: "Tomaat saus , Kaas, Ham, Ananas, Origano", 
-        price: 12
+        desc: "Tomato sauce , Cheese, Ham, Pineapple, Oregano", 
+        price: 14
       },
       
       { 
         name: "Pizza MamaMia", 
-        desc: "Tomaat saus , Kaas, Pepperoni, Origano", 
-        price: 12
+        desc: "Tomato sauce , Cheese, Pepperoni, Oregano", 
+        price: 14
       },
       
       { 
         name: "Pizza Mozzarela", 
-        desc: "Tomaat saus , Kaas, Olive, Fresh Mozzarella, basilico pesto Origano", 
-        price: 14 
+        desc: "Tomato sauce , Cheese, Olive, Fresh Mozzarella, Basil, Pesto, Oregano", 
+        price: 15
       },
       
       { 
         name: "Pizza Bolognese", 
-        desc: "Tomaat saus , Kaas, Bolognese, Origano", 
-        price: 12
+        desc: "Tomato sauce , Cheese, Bolognese, Oregano", 
+        price: 14
       },
       
 
       { 
         name: "Pizza Tonijn", 
-        desc: "Tomaat saus , Kaas, Tonijn, Ui, Origano", 
-        price: 12 
+        desc: "Tomato sauce , Cheese, Tonijn, Onion, Oregano", 
+        price: 14
       },
 
       { 
-        name: "Pizza Scampi", 
-        desc: "Tomaat saus , Kaas, Scampi, Look(garlic), Origano", 
-        price: 16 
+        name: "Pizza Shrimp", 
+        desc: "Tomato sauce , Cheese, Shrimp, Garlic, Oregano", 
+        price: 16
       },
       { 
         name: "Pizza 4 Fromagio", 
-        desc: "Tomaat saus , mozzarella, gorgonzola, parmesano, garana padano , origano", 
-        price: 14 
+        desc: "Tomato sauce , Mozzarella, Gorgonzola, Parmesano, Garana Padano , Oregano", 
+        price: 16
       },
       { 
         name: "Pizza 4 Stagoni", 
-        desc: "Tomaat saus , Kaas, Ham, Salami, Champignon, Ui, Origano", 
-        price: 14 
+        desc: "Tomato sauce , Cheese, Ham, Salami, Mushroom, Onion, Oregano", 
+        price: 15
       },
       { 
         name: "Pizza Kebab", 
-        desc: "Tomaat saus , Kaas, Kebab(Kip / lam), look(garlic) , onion , Origano", 
-        price: 13
+        desc: "Tomato sauce , Cheese, Kebab(Chicken / Lamb), Garlic , Onion , Oregano", 
+        price: 15
       },
       { 
         name: "Pizza Spinachi", 
-        desc: "Tomaat saus , Kaas, spinachi , garlic en origano", 
-        price: 12
+        desc: "Tomato sauce , Cheese, Spinach , Garlic en Oregano", 
+        price: 14
       },
       { 
         name: "Pizza Pepperoni", 
-        desc: "Tomaat saus , Kaas , Pepperoni en Origano", 
-        price: 12
+        desc: "Tomato sauce , Cheese , Pepperoni and Oregano", 
+        price: 14
       },
       { 
         name: "Pizza Vegetarisch", 
-        desc: "Tomaat saus , Kaas, Spinachi, Broccoli, champignon, Ui, look(garlic) en Origano", 
-        price: 13
+        desc: "Tomato sauce , Cheese, Spinachi, Broccoli, Mushroom, Onion, Garlic and Oregano", 
+        price: 14
       },
     ],
     Pastas: [
-        { name: "Spaghetti Bolognese", desc: "bolognese sauce and cheese", price: 12 },
-        { name: "Spaghetti Carbonara", desc: "creme, bacon , fresh egg yolk and cheese", price: 14 },
-        { name: "Pasta Scampi", desc: "scampi, onion, garlic, paprika and rose sauce", price: 16},
-        { name: "Penne Tonijn", desc: "garlic, tomato, sauce and tuna", price: 12 },
-        { name: "Penne 4 Fromagio", desc: "Creme , mozzarella, gorgonzola, parmesano, garana padana", price: 14 },
-        { name: "Penne Arabiata", desc: "garlic, paprika, tomato sauce and spices", price: 12 },
-        { name: "Pasta Veg", desc: "garlic, paprika, onion, mushroom, tomato sauce and spices", price: 12 },
+        { name: "Spaghetti Bolognese", desc: "Bolognese sauce and Cheese", price: 14 },
+        { name: "Spaghetti Carbonara", desc: "Cream, bacon , fresh egg yolk and cheese", price: 16 },
+        { name: "Pasta Shrimp", desc: "Shrimp, onion, garlic, paprika and pink sauce", price: 16},
+        { name: "Penne Tonijn", desc: "Garlic, tomato, sauce and tuna", price: 14},
+        { name: "Penne 4 Fromagio", desc: "Cream , mozzarella, gorgonzola, parmesano, garana padana", price: 16 },
+        { name: "Penne Arabiata", desc: "Garlic, paprika, tomato sauce and spices", price: 14 },
+        { name: "Pasta Veg", desc: "Garlic, paprika, onion, mushroom, tomato sauce and spices", price: 14},
     ],
     Salads: [
-        { name: "Mix salade", desc: "tomato, lettuce, cucumber, carrot, onion and salade dressing", price: 8 },
-        { name: "Mozzarella salade", desc: "tomato, lettuce, cucumber, fresh mozzarella and basilico paste", price: 9 },
+        { name: "Mix salade", desc: "tomato, lettuce, cucumber, carrot, onion and saldad dressing", price: 8 },
+        { name: "Mozzarella salade", desc: "tomato, lettuce, cucumber, fresh mozzarella and basil paste", price: 9 },
         { name: "Tuna salade", desc: "tomato, lettuce, cucumber, red onion, tuna and olive oil", price: 10 },
         { name: "Chicken salade", desc: "tomato, lettuce, cucumber, carrot, onion, chicken and salad dressing", price: 10 },
         { name: "Mayonnaise", desc: "", price: 0.50 },
@@ -116,39 +116,28 @@ const menuData = {
       ],
       
     Drinks: [
-        { name: "Coca Cola", desc: "", price: 1.75 },
-        { name: "Coca Cola (zero)", desc: "", price: 1.75 },
-        { name: "Sprite", desc: "", price: 1.75 },
-        { name: "Fanta", desc: "", price: 1.75 },
-        { name: "RedBull", desc: "", price: 2.75 },
-        { name: "RedBull (zero)", desc: "", price: 2.75 },
-        { name: "Lipton IceTea", desc: "", price: 1.75 },
-        { name: "Water", desc: "", price: 1.50 },
-        { name: "Sparkling Water", desc: "", price: 1.50 },
-        { name: "Duvel", desc: "", price: 3.50 },
-        { name: "Jupiler (klein)", desc: "", price: 1.80 },
-        { name: "Jupiler (groot)", desc: "", price: 2.50 },
-        { name: "Stella Artois (klein)", desc: "", price: 2.00 },
-        { name: "Stella Artois (groot)", desc: "", price: 3.00 },
-        { name: "Leffe", desc: "", price: 3.50 },
-        { name: "Brugse Zot", desc: "", price: 3.50 },
-        { name: "Wijn (rood)", desc: "", price: 5.00 },
-        { name: "Wijn (wit)", desc: "", price: 5.00 },
-        { name: "Wijn (roze)", desc: "", price: 5.00 },
+        { name: "Coca Cola", desc: "", price: 2.50 },
+        { name: "Coca Cola (zero)", desc: "", price: 2.50 },
+        { name: "Sprite", desc: "", price: 2.50 },
+        { name: "Fanta", desc: "", price: 2.50 },
+        { name: "RedBull", desc: "", price: 3.50 },
+        { name: "RedBull (zero)", desc: "", price: 3.50 },
+        { name: "Lipton IceTea", desc: "", price: 2.50 },
+        { name: "Sparkling Water", desc: "", price: 2.50 },
       ],
       
     Snacks: [
-        { name: "Pita (klein)", desc: "kip/lam, salade and sauce", price: 7 },
-        { name: "Pita (groot)", desc: "kip/lam, salade and sauce", price: 8 },
-        { name: "Pita Mix", desc: "kip and lam, salade and sauce", price: 9 },
-        { name: "Durum", desc: "kip/lam, salade and sauce", price: 7 },
-        { name: "Durum Mix", desc: "kip and lam, salade and sauce", price: 9 },
-        { name: "Kapsalon", desc: "kip/lam, salade, frietjes, kaas and sauce", price: 12 },
-        { name: "Kapsalon Mix", desc: "kip and lam, salade, frietjes, kaas and sauce", price: 13 },
-        { name: "Schotel", desc: "kip/lam, salade, frietjes and sauce", price: 12 },
-        { name: "Schotel Mix", desc: "kip and lam, salade, frietjes and sauce", price: 13 },
-        { name: "Friet (Klein)", desc: "", price: 3 },
-        { name: "Friet (Groot)", desc: "", price: 5 },
+        { name: "Pita ", desc: "chicken/lamb, saldad and sauce", price: 8 },
+        
+        { name: "Pita Mix", desc: "chicken and lamb, saldad and sauce", price: 9 },
+        { name: "Durum", desc: "chicken/lamb, saldad and sauce", price: 8 },
+        { name: "Durum Mix", desc: "chicken and lamb, saldad and sauce", price: 9 },
+        { name: "Kapsalon", desc: "chicken/lamb, salad, fries, cheese and sauce", price: 12 },
+        { name: "Kapsalon Mix", desc: "chicken and lamb, salad, fries, cheese and sauce", price: 13 },
+        { name: "Schotel", desc: "chicken/lamb, salad, fries and sauce", price: 12 },
+        { name: "Schotel Mix", desc: "chicken and lamb, salad, fries and sauce", price: 13 },
+        { name: "Fries (Klein)", desc: "", price: 4},
+        { name: "Fries (Groot)", desc: "", price: 6 },
         { name: "Frikandel", desc: "", price: 2 },
         { name: "Mexicano", desc: "", price: 3.50 },
         { name: "Bicky Burger", desc: "", price: 5 },
@@ -157,7 +146,7 @@ const menuData = {
         { name: "Ham Burger", desc: "", price: 5 },
         { name: "Mini Loempis (8stk)", desc: "", price: 5 },
         { name: "Chicken Wings (6stk)", desc: "", price: 8 },
-        { name: "Chicken Nuggets (8stk)", desc: "", price: 6 },
+        { name: "Chicken Nuggets (8stk)", desc: "", price: 7 },
       ],
   };
   console.log(menuData.snacks);
